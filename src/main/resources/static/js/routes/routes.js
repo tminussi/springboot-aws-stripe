@@ -6,6 +6,12 @@ app.config(function($routeProvider) {
         controller: 'HomeController',
         templateUrl: 'templates/home.html',
         controllerAs: 'vm'
+    })
+        .when('/aboutUs', {
+        controller: 'AboutUsController',
+        templateUrl: 'templates/aboutUs.html',
+        controllerAs: 'vm'
+
     });
     $routeProvider.otherwise('/');
 });
