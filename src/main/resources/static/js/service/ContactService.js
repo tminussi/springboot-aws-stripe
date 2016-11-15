@@ -12,8 +12,8 @@ app.factory('ContactService', function ($http) {
             .catch(fail);
     }
 
-    function success(response) {
-        return response.data;
+    function success(contact) {
+        return contact;
     }
 
     function fail(error) {

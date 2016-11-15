@@ -1,4 +1,4 @@
-package br.com.bytecraft.model;
+package br.com.bytecraft.contact.model;
 
 import javax.persistence.*;
 

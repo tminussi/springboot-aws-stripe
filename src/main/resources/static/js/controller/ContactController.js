@@ -12,10 +12,10 @@ app.controller('ContactController', ['ContactService', function (ContactService)
         };
         ContactService.submitContactForm(contact)
             .then(function (success) {
-                console.log(success);
+                sweetAlert("Thanks...", "Your message has been sent!", "success");
             })
             .catch(function (error) {
-                console.log(error);
+                sweetAlert("Oops...", "Something went wrong!", "error");
             });
     }
 }]);

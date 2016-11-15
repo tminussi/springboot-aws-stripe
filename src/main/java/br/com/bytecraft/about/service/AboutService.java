@@ -1,7 +1,7 @@
-package br.com.bytecraft.service;
+package br.com.bytecraft.about.service;
 
-import br.com.bytecraft.model.About;
-import br.com.bytecraft.repository.AboutRepository;
+import br.com.bytecraft.about.model.About;
+import br.com.bytecraft.about.repository.AboutRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

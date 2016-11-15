@@ -1,7 +1,7 @@
-package br.com.bytecraft.controller;
+package br.com.bytecraft.contact.controller;
 
-import br.com.bytecraft.model.Contact;
-import br.com.bytecraft.service.ContactService;
+import br.com.bytecraft.contact.model.Contact;
+import br.com.bytecraft.contact.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,6 +1,6 @@
-package br.com.bytecraft.repository;
+package br.com.bytecraft.about.repository;
 
-import br.com.bytecraft.model.About;
+import br.com.bytecraft.about.model.About;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
