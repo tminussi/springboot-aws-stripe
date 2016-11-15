@@ -5,8 +5,9 @@ app.factory('ContactService', function ($http) {
         submitContactForm: submitContactForm
     };
 
-    function submitContactForm() {
-        return $http.get('/api/contact')
+    function submitContactForm(contact) {
+        console.log(contact);
+        return $http.post('/api/contact', contact)
             .then(success)
             .catch(fail);
     }
