@@ -1,12 +1,12 @@
 var app = angular.module('springAwsStripe');
 
-app.factory('AboutUsService', function ($http) {
+app.factory('ContactService', function ($http) {
     return {
-      fetchAboutUs: fetchAboutUs
+        submitContactForm: submitContactForm
     };
-    
-    function fetchAboutUs() {
-        return $http.get('/api/aboutUs')
+
+    function submitContactForm() {
+        return $http.get('/api/contact')
             .then(success)
             .catch(fail);
     }

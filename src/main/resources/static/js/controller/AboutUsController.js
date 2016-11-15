@@ -1,8 +1,8 @@
 var app = angular.module('springAwsStripe');
 
-app.controller('AboutUsController', ['AboutUsFactory', function (AboutUsFactory) {
+app.controller('AboutUsController', ['AboutUsService', function (AboutUsService) {
     let vm = this;
-    AboutUsFactory.fetchAboutUs()
+    AboutUsService.fetchAboutUs()
         .then(function (response) {
             console.log(response);
             vm.aboutUs = response;

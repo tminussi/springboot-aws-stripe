@@ -12,6 +12,12 @@ app.config(function($routeProvider) {
         templateUrl: 'templates/aboutUs.html',
         controllerAs: 'vm'
 
-    });
+    })
+        .when('/contact', {
+            controller: 'ContactController',
+            templateUrl: 'templates/contact.html',
+            controllerAs: 'vm'
+
+        });
     $routeProvider.otherwise('/');
 });
